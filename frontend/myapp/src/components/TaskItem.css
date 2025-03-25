@@ -1,0 +1,84 @@
+.task-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .task-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item.completed {
+    background: #e0ffe0;
+    text-decoration: line-through;
+  }
+  
+  .task-item h4 {
+    margin: 0 0 10px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .task-item p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+  
+  .task-item .actions {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .task-item .actions button {
+    flex: 1;
+    min-width: 100px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  
+  .task-item .actions button:first-of-type {
+    background: linear-gradient(135deg, #007bff, #3399ff);
+    color: #fff;
+  }
+  
+  .task-item .actions button:first-of-type:hover {
+    background: linear-gradient(135deg, #006ae6, #2e8ae6);
+  }
+  
+  .task-item .actions button:nth-of-type(2) {
+    background: linear-gradient(135deg, #ffc107, #ffb300);
+    color: #fff;
+  }
+  
+  .task-item .actions button:nth-of-type(2):hover {
+    background: linear-gradient(135deg, #e6ac00, #e6a800);
+  }
+  
+  .task-item .actions button:last-of-type {
+    background: linear-gradient(135deg, #dc3545, #e74c3c);
+    color: #fff;
+  }
+  
+  .task-item .actions button:last-of-type:hover {
+    background: linear-gradient(135deg, #c82333, #d43f3a);
+  }
+  
+  @media (max-width: 600px) {
+    .task-item {
+      padding: 15px;
+    }
+  
+    .task-item .actions button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  }
+  
